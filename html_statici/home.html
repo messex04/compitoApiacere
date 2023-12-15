@@ -1,3 +1,9 @@
+<!-- Aggiungi Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<!-- Aggiungi jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 <!-- home.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,8 +34,20 @@
         </ul>
     </div>
 </nav>
+<h1 class="text-center animate__animated animate__fadeIn">Naruto</h1>
 
+<div class="text-center">
+    <img src="https://blog.deagostini.com/wp-content/uploads/2023/02/naruto-cover.jpg" class="img-fluid animate__animated animate__zoomIn" alt="Naruto Cover">
+    <!-- Aggiungi altre immagini con animate__animated animate__fadeIn, animate__zoomIn, o altre classi animate -->
+</div>
 
+<!-- Aggiungi script per attivare le animazioni -->
+<script>
+    $(document).ready(function(){
+        // Aggiungi l'animazione alla tua immagine
+        $(".animate__animated").addClass("animate__delay-1s");
+    });
+</script>
 
 </body>
 </html>
